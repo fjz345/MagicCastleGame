@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{E7D5F0DE-4540-00EC-27CB-828DB0AFCADA}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MagicCastleGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+[
+	{
+		"file": "Z:\\MagicCastleGame\\Source\\MagicCastleGame\\MagicCastleGame.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@Z:\\MagicCastleGame\\.vscode\\compileCommands_Default\\MagicCastleGame.1.rsp"
+		],
+		"directory": "Z:\\ZUnrealEngine\\Engine\\Source"
+	},
+	{
+		"file": "Z:\\MagicCastleGame\\Source\\MagicCastleGame\\MagicCastleGame.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@Z:\\MagicCastleGame\\.vscode\\compileCommands_Default\\MagicCastleGame.1.rsp"
+		],
+		"directory": "Z:\\ZUnrealEngine\\Engine\\Source"
+	},
+	{
+		"file": "Z:\\MagicCastleGame\\Source\\MagicCastleGame\\MagicCastleGame.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@Z:\\MagicCastleGame\\.vscode\\compileCommands_Default\\MagicCastleGame.1.rsp"
+		],
+		"directory": "Z:\\ZUnrealEngine\\Engine\\Source"
+	}
+]

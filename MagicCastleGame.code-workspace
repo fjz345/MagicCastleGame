@@ -1,0 +1,589 @@
+{
+	"folders": [
+		{
+			"name": "MagicCastleGame",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "Z:\\ZUnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "MagicCastleGame Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGame Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGame Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGame Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Test",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Test",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGame Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Test",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Shipping",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Shipping",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGame Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGame Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGame",
+					"Win64",
+					"Shipping",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGameEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Debug",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGameEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"DebugGame",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MagicCastleGameEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			},
+			{
+				"label": "MagicCastleGameEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"MagicCastleGameEditor",
+					"Win64",
+					"Development",
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "Z:\\ZUnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch MagicCastleGame (Debug)",
+				"request": "launch",
+				"program": "Z:\\MagicCastleGame\\Binaries\\Win64\\MagicCastleGame-Win64-Debug.exe",
+				"preLaunchTask": "MagicCastleGame Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGame (DebugGame)",
+				"request": "launch",
+				"program": "Z:\\MagicCastleGame\\Binaries\\Win64\\MagicCastleGame-Win64-DebugGame.exe",
+				"preLaunchTask": "MagicCastleGame Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGame (Development)",
+				"request": "launch",
+				"program": "Z:\\MagicCastleGame\\Binaries\\Win64\\MagicCastleGame.exe",
+				"preLaunchTask": "MagicCastleGame Win64 Development Build",
+				"args": [
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGame (Test)",
+				"request": "launch",
+				"program": "Z:\\MagicCastleGame\\Binaries\\Win64\\MagicCastleGame-Win64-Test.exe",
+				"preLaunchTask": "MagicCastleGame Win64 Test Build",
+				"args": [
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGame (Shipping)",
+				"request": "launch",
+				"program": "Z:\\MagicCastleGame\\Binaries\\Win64\\MagicCastleGame-Win64-Shipping.exe",
+				"preLaunchTask": "MagicCastleGame Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGameEditor (Debug)",
+				"request": "launch",
+				"program": "Z:\\ZUnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "MagicCastleGameEditor Win64 Debug Build",
+				"args": [
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject"
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGameEditor (DebugGame)",
+				"request": "launch",
+				"program": "Z:\\ZUnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "MagicCastleGameEditor Win64 DebugGame Build",
+				"args": [
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject"
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch MagicCastleGameEditor (Development)",
+				"request": "launch",
+				"program": "Z:\\ZUnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "MagicCastleGameEditor Win64 Development Build",
+				"args": [
+					"Z:\\MagicCastleGame\\MagicCastleGame.uproject"
+				],
+				"cwd": "Z:\\ZUnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "Z:\\ZUnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "Z:\\ZUnrealEngine\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=Z:\\MagicCastleGame\\MagicCastleGame.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "Z:\\ZUnrealEngine"
+			}
+		]
+	}
+}
